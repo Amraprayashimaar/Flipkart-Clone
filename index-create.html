@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!</title>
+    <link rel="icon" href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+           <div class="logo">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg">
+           </div>
+        </div>
+        <div class="search">
+            <form id="form">
+            <input type="text" placeholder="Search for products, brands and more" id="search input"/>
+            </form>
+            <span class="material-symbols-outlined">
+                search
+                </span>
+                <div class="recent">
+                   <div class="recent-list">
+                    <span class="material-symbols-outlined">
+                        history
+                        </span>
+                        <p>Shoes</p>
+                   </div> 
+                </div>
+        </div>
+        <div class="loginbtn">
+            <button id="btn">Login</button>
+           
+        </div>
+        <a class="nav-link" href="https://seller.flipkart.com/sell-online?utm_source=fkwebsite&utm_medium=websitedirect">
+            Become a seller
+        </a>
+        <div class="mores">
+           <p>More</p>
+            <span class="material-symbols-outlined icon_more">
+                stat_minus_1
+                </span>
+        </div>
+       
+        <div class="cart">
+            <span class="material-symbols-outlined set">
+                shopping_cart
+                </span>  
+               <p> Cart</p>
+        </div>
+        </a>
+        </header>
+    
+    </body>
+    <style>*{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+    }
+    body{
+        margin: 0;
+       
+    }
+    header{
+        background-color: #2874f0;
+        height: 60px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    
+    .logo{
+        width: 200px;
+       
+    }
+    .search{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 500px;
+        min-width: 300px;
+        background-color: white;
+        width: 850px;
+        height: 36px;
+        margin: 0px 10px;
+        border-radius: 2px;
+        padding: 0px 10px;
+      
+        box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+    .search span{
+        color: #2874f0;
+        cursor: pointer;
+    }
+    .search input{
+        width: 100%;
+        font-size: 15px;
+        border: none;
+        outline: none;
+    }
+    .recent{
+        position: absolute;
+        background-color:white;
+        height: 400px;
+    width: 100%;
+    top: 34px;
+    margin-left: -10px;
+    border-top: 1px solid #ccc;
+    display: none;
+    padding: 10px;
+    }
+    .search:focus-within .recent{
+        display: block;
+    }
+        
+    
+    .loginbtn button{
+    color: #2874f0;
+    font-weight: 550;
+    text-decoration: none;
+    padding: 5px 40px;
+    font-size: 18px;
+    }
+    .login_menu{
+        position: absolute;
+        top: 35px;
+        height: 370px;
+        width: 100%;
+        width: 250px;
+        background-color: white;
+       
+        margin-left: -40px ;
+        transform: translate(-30%);
+        display: none;
+        padding-top: 15px;
+        margin-bottom: 15px;
+    }
+    .loginbtn:hover .login_menu{
+        display: block;
+    }
+    .loginlist{
+       height: 100%;
+       max-width: 100%;
+       background-color: white;
+       box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);
+       padding:10px;
+       font-size: 17px;
+    }
+    .nav-link {
+    color: white;
+    margin-left: 29px;
+  padding: 0px 16px;
+    font-size: 18px;
+   text-decoration: none;
+font-weight: 550;
+}
+.mores{
+    margin-left: 29px;
+    color: white;
+    font-weight: 550;
+    cursor: pointer;
+    display: flex;
+}
+.icon_more{
+    font-size: 10px;
+    transition: transform 0.5s;
+}
+.plusicon{
+width: 30px;
+display: flex;
+
+}
+.plusicon a p{
+    display: flex;
+    font-weight: 500;
+}
+
+.mores:hover .icon_more{
+transform: rotate(-180deg);
+}
+.cart{
+    margin-left: 29px;
+  
+    padding: 0 16px;
+    font-size: 18px;
+    display: flex;
+    font-weight: 550;
+}
+.cart p{
+ padding: 0px 5px; 
+ text-decoration: none; 
+ color: white; 
+}
+.recent-list{
+    display: flex;
+
+}
+.category-row{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+.category-col{
+    padding: 10px 0px;
+    cursor: pointer;
+    color: rgb(85,83,83);
+}
+.category-col img{
+    width: 64px;
+    height: 64px;
+}
+.category-col h5:hover{
+   color: #2874f0; 
+}
+.card{
+    box-shadow: rgb(177,174,174) 0px 0px 5px 1px;
+    padding: 20px 0px;
+    margin: 20px 5px;
+    border-radius: 5px;
+    display: block;
+}
+.common-heading{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+    padding: 50px 20px;
+    margin-top: 20px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 /16%);
+}
+.common-heading-left h1{
+    font-size: 20px;
+    font-weight: 400;
+    padding: auto;
+    position: absolute;
+}
+.common-heading-left h2{
+    font-size: 15px;
+    padding: 5px 0px;
+    color: rgb(45,141,138);
+    font-weight: 200;
+}
+.common-heading-right button{
+width: 90px;
+height: 40px;
+font-size: 18px;
+background-color: #2874f0;
+border: none;
+color: white;
+border-radius: 2px;
+}
+.common-row{
+    display: flex;
+    justify-content: space-between;
+    width:100% ;
+    min-height: 366px;
+    margin: 10px 0px;
+  
+}
+.common-col {
+  text-align: center;
+  line-height: 22px;  
+ 
+}
+.common-col button{
+    padding: 4px;
+    margin: 5px;
+    background-color: orange;
+    color:white;
+    border: #7a7a7a 2px solid;
+    border-radius: 2px;
+}
+
+.common-col img{
+   transition: 300ms;
+ width: 200px;
+ height: 180px;
+}
+.common-col img:hover{
+transform: scale(0.9);
+}
+.common-col h3,h4,h6{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.common-col h3{
+    margin-top: 10px;
+   font-size: 16px;
+}
+.common-col h4{
+    color: green;
+    font-size: 14px;
+    font-weight: 300;
+}
+.common-col h6{
+    color: rgb(161,161,161);
+    font-size: 12px;
+    font-weight: 100;
+}
+/*<!--footer--*/
+
+footer{
+    background-color: #172337;
+    height: 332;
+}
+.footer-row{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    padding: 30px 60px;
+}
+.footer-row2{
+    display: flex;
+    border-top: 1px solid #454d5e;
+    justify-content: space-evenly;
+}
+.footer-col-1{
+    width: 15%;
+}
+.footer-col-2{
+    width: 15%;
+}
+.footer-col-3{
+    width: 15%;
+}
+.footer-col-4{
+    width: 10%;
+}
+.footer-col-5{
+    width: 20%;
+    border-left: 1px solid #454d5e;
+    height: 25;
+    padding-left: 25px;
+}
+.footer-col-6{
+    width: 20%;
+    padding-left: 50px;
+}
+.footer-heading p{
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.footer-list a{
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 0px;
+}
+.footer-list a:hover{
+text-decoration: underline;
+}
+.footer-list p{
+    text-align: left;  
+    display: block;
+    color: white;
+    font-size: 12px;
+    font-weight: 100px;
+   
+    line-height: 20px;
+    cursor: pointer;
+}
+.footer-list-address p{
+    text-align: left;  
+    display: block;
+    color: white;
+    font-size: 12px;
+    font-weight: 100px;
+  
+    line-height: 20px;
+    cursor: pointer;
+}
+.footer-list-address span{
+    color: rgb(60,100,245);
+    cursor: pointer;
+}
+.footer-row2-col p{
+    color: white;
+    font-size: 15px;
+    font-weight: 100px;
+  margin-top: 2px;
+    line-height: 20px;
+    cursor: pointer;
+   text-align: center;
+   line-height: 50px;
+   letter-spacing: .7px;
+}
+.footer-row2-col img{
+padding: 0%;
+}
+.material-symbols-outlined{
+color: #ffd700;
+cursor: pointer;
+padding-right: 10px;
+font-size: 15px;
+}
+.border1{
+border: #7a7a7a 1px solid;
+border-radius: 3px;
+margin-right: 4px;
+margin-left: 4px;
+padding: 5px;
+}
+.border2{
+    border: #7a7a7a 1px solid;
+    border-radius: 3px;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 5px;
+}
+.border2{
+    border: #7a7a7a 1px solid;
+    border-radius: 3px;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 5px;
+}
+.border3{
+    border: #7a7a7a 1px solid;
+    border-radius: 3px;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 5px;
+}
+.border4{
+    border: #7a7a7a 1px solid;
+    border-radius: 3px;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 5px;
+}
+.border5{
+    border: #7a7a7a 1px solid;
+    border-radius: 3px;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 5px;
+}
+.border6{
+    border: #7a7a7a 1px solid;
+    border-radius: 3px;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 5px;
+}
+.border7{
+    border: #7a7a7a 1px solid;
+    border-radius: 3px;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 5px;
+}
+    </style>
+      
+
+
+    <section>
+        <div class="card">
+            <div class="common-heading">
+                <div class="common-heading-left">
+                   <h1>Popularity</h1>
+                </div>
+                <div class="common-heading-right">
+               
+                </div>
+            </div>
+            <div class="common-row">
+                <div class="common-col">
+                    <div class="border1">
+                    <img src="https://rukminim2.flixcart.com/image/312/312/kxnl6kw0/monitor/w/2/0/vg279q1r-full-hd-27-90lm05s1-b01e10-asus-original-imaga25ucme7b3kr.jpeg?q=70">
+                    <h3">Acer 21.5 inch Full HD LED</h3>
+                    <h2>₹5,251</h2>
+                    <button class="bottom" onclick="addToCart()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+                <div class="common-col">
+                    <div class="border2">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/f/e/u/-original-imagkjtjkxk2kapw.jpeg?q=70
+                    ">
+                    <h3>Noise Colorfit Icon 21.8</h3>
+                    <h5>Deep Wine Strap,Regular</h5>
+                    <h2>₹1,399</h2>
+                    <h4>Special price</h4>
+                    <button class="bot"onclick="Cart()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+                <div class="common-col">
+                    <div class="border3">
+                    <img src="Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!_files\nord-buds-ce-oneplus-original-imagfyk4hyvgg6ze.jpeg"alt="Noise Colorfit Icon">
+                    <h3>OnePlus Buds T110 with AI ENC for calls,</h3>
+                    <h2>₹1,499</h2>
+                    <h4>50% off</h4>
+                    <button id="tom"onclick="add()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+                <div class="common-col">
+                    <div class="border4">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/speaker/mobile-tablet-speaker/b/h/l/por-1579-portronics-original-imagtafykqagyggk.jpeg?q=70" alt="OnePlus Buds">
+                    <h3>Portronics SoundDrum P Wireless Speaker</h3>
+                    <h2>₹1,999</h2>
+                    <h4>50% off</h4>
+                    <button id="bom"onclick="Car()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+                <div class="common-col">
+                    <div class="border5">
+                    <img src="https://rukminim2.flixcart.com/image/312/312/k3q76a80/camera/7/9/u/sony-apsc-ilce-6600-b-in5-mirrorless-original-imafm6mtahhva36r.jpeg?q=70">
+                    <h3>SONY Alpha ILCE-6100LAPS-C
+                        Mirrorless Camera
+                    </h3>
+                    <h2>₹61,489</h2>
+                    <h4>19% off</h4>
+                    <button id="but"onclick="box()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+                <div class="common-col">
+                    <div class="border6">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/keyboard/gaming-keyboard/e/l/r/hydra-10-5-0-2-4-ghz-rgb-type-c-charging-brown-switch-mechanical-original-imagtyz3zbya4gf3.jpeg?q=70">
+                    <h3>Portronics POR 1880 Blutooth,
+                       Wireless Gaming Keyboard
+                    </h3>
+                    <h2>₹1,999</h2>
+                    <h4>80% off</h4>
+                    <button id="best"onclick="addTo()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+                <div class="common-col">
+                    <div class="border7">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/y/q/q/-original-imagxp8tzzwyhkzr.jpeg?q=70">
+                    <h3>boAt Wave Flex connect wi...</h3>
+                   
+                    <h2>₹1,299</h2>
+                    <h4>83% off</h4>
+                    <button id="boat"onclick="boat()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+       </section>
+
+       <!--Toys-->
+       <section>
+
+        <div class="card">
+            <div class="common-heading">
+                <div class="common-heading-left">
+                   <h1>Popularity</h1>
+                </div>
+                <div class="common-heading-right">
+                
+                </div>
+            </div>
+            <div class="common-row">
+                <div class="common-col">
+                    <div class="border1">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/kwl0akw0/stuffed-toy/k/h/i/5-feet-stuffed-spongy-huggable-smar-toys-cute-soft-red-teddy-original-imag982wnngwad3n.jpeg?q=70">
+                    <h3">Osjs 4 feet Very Cute Long Soft Teddy Bear</h3>
+                    <h2>₹399</h2>
+                    <h4>Hot Deal</h4>
+                    <button id="bottom"onclick="bag()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+                <div class="common-col">
+                    <div class="border2">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/art-set/k/k/t/12-pcs-artist-sketch-pencil-set-for-artist-drawing-sketching-original-imagqtf2dwyugmun.jpeg?q=70">
+                    <h3>Adore 12Pcs Sketch Pencil Set</h3>
+                    
+                    <h2>₹208</h2>
+                    <h4>89% off</h4>
+                    <button id="bottom"onclick="Addtobag()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+                <div class="common-col">
+                    <div class="border3">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cycle/v/1/4/bolt-cycles-for-men-with-front-suspension-dual-disc-brake-mtb-original-imahyvvm9fhtmg2c.jpeg?q=70">
+                    <h3>Urban Terrain Bolt Cycles for Men</h3>
+                    <h2>₹7,299</h2>
+                    <h4>63% off</h4>
+                    <button id="bottom"onclick="root()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+                <div class="common-col">
+                    <div class="border4">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/toy-weapon/i/2/1/blaze-storm-manual-soft-bullet-gun-20-soft-bullets-included-original-imahysgsadz3ge3c.jpeg?q=70">
+                    <h3>Extrawish Blaze Storm Manual Soft Bullet Gun</h3>
+                    <h2>₹299</h2>
+                    <h4>Lowest Price in the year</h4>
+                    <button id="bottom"onclick="flip()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+                <div class="common-col">
+                    <div class="border5">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/remote-control-toy/e/7/d/remote-control-car-electronic-3d-lights-car-with-chargeable-original-imaghr6avrmd69mz.jpeg?q=70">
+                    <h3>Aganta Remote Control Car
+                    </h3>
+                    <h2>₹319</h2>
+                    <h4>73% off</h4>
+                    <button id="bottom"onclick="art()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+                <div class="common-col">
+                    <div class="border6">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/skipping-rope/d/1/f/rapid-speed-jump-cable-and-foam-handles-w-jump-rope-300-wearslim-original-imahf2fzpkkcnqxn.jpeg?q=70">
+                    <h3>Wearslim Rapid Speed Jump Cable
+                    </h3>
+                    <h2>₹169</h2>
+                    <h4>80% off</h4>
+                    <button id="bottom"onclick="Crt()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+                <div class="common-col">
+                    <div class="border7">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cycle/j/e/4/14t-rocky-skyblue-14-13-xaipro-rides-60-single-speed-original-imahymzmzg3mhptg.jpeg?q=70">
+                    <h3>xaipro rides 14t rocky skyblue Cycle</h3>
+                   
+                    <h2>₹2,249</h2>
+                    <h4>62% off</h4>
+                    <button id="bottom"onclick="btn()">Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+       </section>
+       <!--Sports-->
+       
+       <footer>
+        <div class="footer-row">                                             
+         <div class="footer-col-1">
+             <div class="footer-heading">
+                <p>ABOUT</p>
+             </div>
+             <div class="footer-list">
+                 <a href="#">Contact Us</a>
+                 <a href="#">About Us</a>
+                 <a href="#">careers</a>
+                 <a href="#">Flipkart Stories</a>
+                 <a href="#">Press</a>
+                 <a href="#">Corporate Information</a>
+                 
+             </div>
+         </div>
+         <div class="footer-col-2">
+             <div class="footer-heading">
+                <p>HELP</p>
+             </div>
+             <div class="footer-list">
+                 <a href="#">Payment</a>
+                 <a href="#">Shipping</a>
+                 <a href="#">Cancellation</a>
+                 <a href="#">FAQ</a>
+                 <a href="#">Report Infringement</a>
+               
+             </div>
+         </div>
+         <div class="footer-col-3">
+             <div class="footer-heading">
+                <p>CONSUMER POLICY</p>
+             </div>
+             <div class="footer-list">
+                 <a href="#">Cancellation & Return</a>
+                 <a href="#">Terms of Use</a>
+                 <a href="#">Security</a>
+                 <a href="#">Privacy</a>
+                 <a href="#">Sitemap</a>
+                 <a href="#">Grievance Redressal</a>
+             </div>
+         </div>
+         <div class="footer-col-4">
+             <div class="footer-heading">
+                <p>Mail Us:</p>
+             </div>
+             <div class="footer-list">
+                <p>Flipkart Internet Private Limited,
+              Buildings Alyssa,Bengonia & Clove Embassy Tech Village,
+                Outer Ring Road,Devarabeesanahalli Village,
+                Bengaluru,560103
+               Karnataka,India</p>
+               
+             </div>
+         </div>
+
+         <div class="footer-col-5">
+             <div class="footer-heading">
+                <p>SOCIAL</p>
+             </div>
+             <div class="footer-list">
+                 <a href="#">Facebook</a>
+                
+                 <a href="#">Twitter</a>
+                 <a href="#">YouTube</a>
+               
+             </div>
+         </div>
+
+         <div class="footer-col-6">
+             <div class="footer-heading">
+                <p>Register Office Address:</p>
+             </div>
+             <div class="footer-list-address">
+                <p>Flipkart Internet Private Limited,</p>
+                <p>Building Alyssa, Begonia &</p>
+                <p>Clove Embassy Tech Village,</p>
+                <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                <p>Bengaluru, 560103,</p>
+                <p>Karnataka, India</p>
+                <p>CIN: U5119KA2012PTC066107</p>
+                <p>Telephone:<span> 1800 202 9898</span></p>
+             </div>
+         </div>
+        </div>
+        <div class="footer-row2">
+         <div class="footer-row2-col">
+             <p><span class="material-symbols-outlined">
+                 shopping_bag
+                 </span>Sell on Flipcart</p>
+         </div>
+         <div class="footer-row2-col">
+             <p><span class="material-symbols-outlined">
+                 star
+                 </span>Advertise</p>
+         </div>
+         <div class="footer-row2-col">
+             <p><span class="material-symbols-outlined">
+                 featured_seasonal_and_gifts
+                 </span>Gift Card</p>
+         </div>
+         <div class="footer-row2-col">
+             <p><span class="material-symbols-outlined">
+                 help
+                 </span>Help Center</p>
+         </div>
+         <div class="footer-row2-col">
+             <p>@ 2007-2021 Flipkart.com</p>
+         </div>
+         <div class="footer-row2-col">
+             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg">
+            
+         </div>
+        </div>
+        </footer>
+        <!--javascript-->
+        <script>
+            function addToCart() {
+                // Get product details
+                let productDetails = {
+                    img:"https://rukminim2.flixcart.com/image/312/312/kxnl6kw0/monitor/w/2/0/vg279q1r-full-hd-27-90lm05s1-b01e10-asus-original-imaga25ucme7b3kr.jpeg?q=70",
+                    name: "Acer 21.5 inch Full HD LED",
+                    price: "₹5,251",
+                   
+                };
+            
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                // Store updated cart in local storage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+            function Cart() {
+                // Get product details
+                let productDetails = {
+                    img:"https://rukminim2.flixcart.com/image/312/312/kxnl6kw0/monitor/w/2/0/vg279q1r-full-hd-27-90lm05s1-b01e10-asus-original-imaga25ucme7b3kr.jpeg?q=70",
+                    name: "Deep Wine Strap,Regular",
+                    price: "₹1,399",
+                    describe:"Specia Price",
+                    
+                };
+            
+               
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+            function add() {
+                // Get product details
+                let productDetails = {
+                    img:"Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!_files\nord-buds-ce-oneplus-original-imagfyk4hyvgg6ze.jpeg",
+                    name: "OnePlus Buds T110 with AI ENC for calls,",
+                    price: "₹1,499",
+                    describe:'50% off',
+                    
+                };
+            
+                
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+            function Car() {
+                // Get product details
+                let productDetails = {
+                    img:"https://rukminim2.flixcart.com/image/312/312/kxnl6kw0/monitor/w/2/0/vg279q1r-full-hd-27-90lm05s1-b01e10-asus-original-imaga25ucme7b3kr.jpeg?q=70",
+                    name: "Portronics SoundDrum P Wireless Speaker",
+                    price: "₹1,999",
+                    describe:"50% off",
+                    // Add more details as needed
+                };
+            
+                // Retrieve existing cart items or initialize an empty array
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                // Store updated cart in local storage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+            function box() {
+                // Get product details
+                let productDetails = {
+                    img:"https://rukminim2.flixcart.com/image/312/312/kxnl6kw0/monitor/w/2/0/vg279q1r-full-hd-27-90lm05s1-b01e10-asus-original-imaga25ucme7b3kr.jpeg?q=70",
+                    name: "SONY Alpha ILCE-6100LAPS-C   Mirrorless Camera",
+                    price: "₹61,489",
+                    describe:'19% off',
+                    // Add more details as needed
+                };
+            
+                // Retrieve existing cart items or initialize an empty array
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                // Store updated cart in local storage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+            function addTo() {
+                // Get product details
+                let productDetails = {
+                    img:"https://rukminim2.flixcart.com/image/312/312/kxnl6kw0/monitor/w/2/0/vg279q1r-full-hd-27-90lm05s1-b01e10-asus-original-imaga25ucme7b3kr.jpeg?q=70",
+                    name: "Portronics POR 1880 Blutooth   Wireless Gaming Keyboard",  
+                    price: "₹1,999",
+                    describe:'50% off',
+                    // Add more details as needed
+                };
+            
+                // Retrieve existing cart items or initialize an empty array
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                // Store updated cart in local storage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+            function boat() {
+                // Get product details
+                let productDetails = {
+                    img:"https://rukminim2.flixcart.com/image/312/312/kxnl6kw0/monitor/w/2/0/vg279q1r-full-hd-27-90lm05s1-b01e10-asus-original-imaga25ucme7b3kr.jpeg?q=70",
+                    name: "boAt Wave Flex connect wi...",
+                    price: "₹1,293",
+                    describe:'83% off',
+                    // Add more details as needed
+                };
+            
+                // Retrieve existing cart items or initialize an empty array
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                // Store updated cart in local storage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+            function bag() {
+                // Get product details
+                let productDetails = {
+                    img:"https://rukminim2.flixcart.com/image/312/312/kxnl6kw0/monitor/w/2/0/vg279q1r-full-hd-27-90lm05s1-b01e10-asus-original-imaga25ucme7b3kr.jpeg?q=70",
+                    name: "Osjs 4 feet Very Cute Long Soft Teddy Bear",
+                    price: "₹5,251",
+                    describe:'Hot Deal',
+                    // Add more details as needed
+                };
+            
+                // Retrieve existing cart items or initialize an empty array
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                // Store updated cart in local storage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+            function addtobag() {
+                // Get product details
+                let productDetails = {
+                    img:"https://rukminim2.flixcart.com/image/312/312/kxnl6kw0/monitor/w/2/0/vg279q1r-full-hd-27-90lm05s1-b01e10-asus-original-imaga25ucme7b3kr.jpeg?q=70",
+                    name: "Adore 12Pcs Sketch Pencil Set",
+                    price: "₹208",
+                    describe:'89%',
+                    // Add more details as needed
+                };
+            
+                // Retrieve existing cart items or initialize an empty array
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                // Store updated cart in local storage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+            function root() {
+                // Get product details
+                let productDetails = {
+                    img:"https://rukminim2.flixcart.com/image/312/312/kxnl6kw0/monitor/w/2/0/vg279q1r-full-hd-27-90lm05s1-b01e10-asus-original-imaga25ucme7b3kr.jpeg?q=70",
+                    name: "Urban Terrain Bolt Cycles for Men",
+                    price: "₹7,299",
+                    describe:'63%',
+
+                    // Add more details as needed
+                };
+            
+                // Retrieve existing cart items or initialize an empty array
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                // Store updated cart in local storage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+            function flip() {
+                // Get product details
+                let productDetails = {
+                    img:"https://rukminim2.flixcart.com/image/312/312/kxnl6kw0/monitor/w/2/0/vg279q1r-full-hd-27-90lm05s1-b01e10-asus-original-imaga25ucme7b3kr.jpeg?q=70",
+                    name: "Extrawish Blaze Storm Manual Soft Bullet Gun",
+                    price: "₹299",
+                    describe:'Lowest Price in the year',
+                    // Add more details as needed
+                };
+            
+                // Retrieve existing cart items or initialize an empty array
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                // Store updated cart in local storage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+            function art() {
+                // Get product details
+                let productDetails = {
+                    img:"https://rukminim2.flixcart.com/image/312/312/kxnl6kw0/monitor/w/2/0/vg279q1r-full-hd-27-90lm05s1-b01e10-asus-original-imaga25ucme7b3kr.jpeg?q=70",
+                    name: "Aganta Remote Control Car",
+                    price: "₹319",
+                    describe:'73%off'
+                    // Add more details as needed
+                };
+            
+                // Retrieve existing cart items or initialize an empty array
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                // Store updated cart in local storage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+            function Crt() {
+                // Get product details
+                let productDetails = {
+                    img:"https://rukminim2.flixcart.com/image/312/312/kxnl6kw0/monitor/w/2/0/vg279q1r-full-hd-27-90lm05s1-b01e10-asus-original-imaga25ucme7b3kr.jpeg?q=70",
+                    name: "Wearslim Rapid Speed Jump Cable",
+                    price: "₹159",
+                    describe:'80% off',
+                    // Add more details as needed
+                };
+            
+                // Retrieve existing cart items or initialize an empty array
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                // Store updated cart in local storage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+            function btn() {
+                // Get product details
+                let productDetails = {
+                    img:"https://rukminim2.flixcart.com/image/612/612/xif0q/cycle/j/e/4/14t-rocky-skyblue-14-13-xaipro-rides-60-single-speed-original-imahymzmzg3mhptg.jpeg?q=70",
+                    name: "xaipro rides 14t rocky skyblue Cycle",
+                    price: "₹2,249",
+                    describe:'62% off'
+                    // Add more details as needed
+                };
+            
+                // Retrieve existing cart items or initialize an empty array
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+                // Add product to cart
+                cartItems.push(productDetails);
+            
+                // Store updated cart in local storage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            
+                // Redirect to cart page
+                window.location.href = "cart.html";
+            }
+             
+        </script>
+</body>
+</html>

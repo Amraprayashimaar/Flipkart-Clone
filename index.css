@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+body{
+    margin: 0;
+   
+}
+header{
+    background-color: #2874f0;
+    height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo{
+    width: 200px;
+   
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    min-width: 300px;
+    background-color: white;
+    width: 850px;
+    height: 36px;
+    margin: 0px 10px;
+    border-radius: 2px;
+    padding: 0px 10px;
+  
+    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.search span{
+    color: #2874f0;
+    cursor: pointer;
+}
+.search input{
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+.recent{
+    position: absolute;
+    background-color:white;
+    height: 400px;
+width: 100%;
+top: 34px;
+margin-left: -10px;
+border-top: 1px solid #ccc;
+display: none;
+padding: 10px;
+}
+.search:focus-within .recent{
+    display: block;
+}
+.loginbtn{
+    background-color: white;
+    padding: 5px 40px;
+    font-size: 18px;
+   margin-left: 29px;
+    border-radius: 2px;
+    position: relative;
+    
+}
+.loginbtn a{
+color: #2874f0;
+font-weight: 550;
+text-decoration: none;
+
+}
+.login_menu{
+    position: absolute;
+    top: 35px;
+    height: 370px;
+    width: 100%;
+    width: 250px;
+    background-color: transparent;
+    margin-left: -40px ;
+    transform: translate(-30%);
+    display: none;
+    padding-top: 15px;margin-bottom: 15px;
+}
+.loginbtn:hover .login_menu{
+    display: block;
+}
+.loginlist{
+   height: 100%;
+   max-width: 100%;
+   background-color: white;
+   box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);
+   padding:10px;
+   font-size: 17px;
+}
+.login_menu:before{
+position: absolute;
+content: "";
+
+margin-left: 130px;
+top:0px;
+border-top: 0px solid transparent;
+border-left: 5px solid transparent;
+border-right:5px solid transparent;
+border-bottom: 10px solid white;
+}
+.logingroup{
+    display: flex;
+    justify-content: space-between;
+}
+.logingroup:hover{
+    text-decoration: underline;
+}
+.linkicon{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    height:95%;
+}
+.linkicon a{
+   display: flex;
+   font-size: 15px;
+   padding-top: 20px;
+}
+.linkicon a p{
+    padding-left: 10px;
+color: rgb(23, 23, 23);
+font-weight: 500;
+}
+.nav-link {
+    color: white;
+    margin-left: 29px;
+  padding: 0px 16px;
+    font-size: 18px;
+   text-decoration: none;
+font-weight: 550;
+}
+.mores{
+    margin-left: 29px;
+    color: white;
+    font-weight: 550;
+    cursor: pointer;
+    display: flex;
+}
+.icon_more{
+    font-size: 10px;
+    transition: transform 0.5s;
+}
+.plusicon{
+width: 30px;
+display: flex;
+
+}
+.plusicon a p{
+    display: flex;
+    font-weight: 500;
+}
+
+.mores:hover .icon_more{
+transform: rotate(-180deg);
+}
+.card{
+    margin-left: 29px;
+    color: white;
+    padding: 0 16px;
+    font-size: 18px;
+    display: flex;
+    font-weight: 550;
+}
+.card p{
+ padding: 0px 5px; 
+ text-decoration: none;  
+}
+.recent-list{
+    display: flex;
+
+}
+.recent-list span{
+    color: #7a7a7a;
+    font-size: 20px;
+}
+.recent-list p{
+padding-left: 20px;
+padding-top: 2px;
+font-size: 14px;
+font-weight: 550;
+}
+.link {
+ 
+   text-decoration: none;
+
+}
+
+
+.features{
+  width: 100%;
+  height: 155px;  
+  max-width: 100%;
+    max-height: 100%;
+    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transition: opacity .3s linear;
+    padding-left: 200px;
+    padding-top: 30px;
+    background-size: 99%;
+   
+}
+.features img{
+    width: 64px;
+    height: 64px;
+}
+.features p{
+    padding-left: 10px;
+text-decoration: none;
+padding-top: 10px;
+font-weight: 550;
+   font-size: 17px;
+}
+.fact{
+    width: 100%;
+  height: 155px;  
+  max-width: 100%;
+    max-height: 100%;
+    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transition: opacity .3s linear;
+    padding-left: 320px;
+    padding-top: 30px;
+    background-size: 99%;
+}
+.fact img{
+    height: 64px;
+    width: 64px;
+}
+.fact p{
+    padding-left: 10px;
+    text-decoration: none;
+    padding-top: 10px;
+    font-weight: 550;
+   font-size: 17px;
+}
+.fashion{
+    padding-left: 435px;
+    padding-top: 30px;
+   text-decoration: none;
+   position: absolute;
+   cursor: pointer;
+ 
+  display: block;
+  
+}
+.fashion img{
+    height: 64px;
+    width: 64px;  
+}.fashion p{
+    padding-left: 10px;
+    text-decoration: none;
+    padding-top: 13px;
+    cursor: pointer; 
+   font-weight: 550;
+   font-size: 17px;
+}
+
+.icon_fashion{
+    font-size: 10px;
+    transition: transform 0.5s;
+    
+}
+.fashion:hover .icon_fashion{
+    transform: rotate(-180deg);
+    }
+
+.fashion:hover .icon_fashion{
+    transform: rotate(-180deg);
+    }
+.electrical{
+    padding-left: 560px;
+    padding-top: 30px;
+  text-decoration: none;
+  position: absolute;
+}
+.electrical img{
+    width: 64px;
+    height: 64px;
+}
+.electrical p{
+    font-weight: 550;
+    font-size: 17px;
+    padding-top: 10px;
+}
+.Home{
+    padding-left: 700px;
+    padding-top: 35px;
+    position: absolute;
+}
+.Home img{
+    width: 60px;
+    height: 6opx;
+}
+.Home p{ 
+    padding-top: 10px;
+    font-weight: 550;
+    font-size: 17px;
+}
+.Appliances{
+    padding-left: 860px;
+    padding-top: 32px;
+    position: absolute;
+}
+.Appliances img{
+    width: 60px;
+    height: 60px;
+}
+.Appliances p{
+    padding-top: 10px;
+    font-weight: 550;
+   font-size: 17px;
+}
+.Travel{
+padding-left: 988px;
+padding-top: 28px;
+position: absolute;
+}
+.Travel img{
+    width: 64px;
+    height: 64px;
+}
+.Travel p{
+    font-weight: 550;
+    font-size: 17px;
+   padding-top: 10px;
+}
+.Toys{
+    padding-left: 1110px;
+    padding-top: 34px;
+    position: absolute;
+}
+.Toys img{
+    width: 64px;
+    height: 64px;  
+}
+
+.Wheelers{
+    padding-left: 1288px;
+    padding-top: 35px;
+    position: absolute;
+}
+.Wheelers img{
+    width: 64px;
+    height: 64px;
+   
+}
